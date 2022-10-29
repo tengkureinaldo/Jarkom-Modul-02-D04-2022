@@ -537,12 +537,54 @@ ping www.strix.operation.wise.D04.com -c 5
 	
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/56400536/198823760-bea2b5fc-655c-412c-81c9-dd4347e8fe32.png" width=48% height=48%> 
-  <img src="https://user-images.githubusercontent.com/56400536/198823752-ecdbd49a-85de-42b9-a2e7-e4b546c1d0f5.png" width=48% height=48%>
-</p>
-	
-
-
-	
-
   
+## Soal 8
+Setelah melakukan konfigurasi server, maka dilakukan konfigurasi Webserver. Pertama dengan webserver www.wise.yyy.com. Pertama, Loid membutuhkan webserver dengan DocumentRoot pada /var/www/wise.yyy.com 
+
+### Jawab
+
+## Soal 9
+Setelah itu, Loid juga membutuhkan agar url www.wise.yyy.com/index.php/home dapat menjadi menjadi www.wise.yyy.com/home
+
+### Jawab
+
+## Soal 10
+Setelah itu, pada subdomain www.eden.wise.yyy.com, Loid membutuhkan penyimpanan aset yang memiliki DocumentRoot pada /var/www/eden.wise.yyy.com
+
+### Jawab
+
+## Soal 11
+Akan tetapi, pada folder /public, Loid ingin hanya dapat melakukan directory listing saja 
+
+### Jawab
+
+## Soal 12
+Tidak hanya itu, Loid juga ingin menyiapkan error file 404.html pada folder /error untuk mengganti error kode pada apache
+
+### Jawab
+  
+## Soal 13
+Loid juga meminta Franky untuk dibuatkan konfigurasi virtual host. Virtual host ini bertujuan untuk dapat mengakses file asset www.eden.wise.yyy.com/public/js menjadi www.eden.wise.yyy.com/js
+
+### Jawab
+
+## Soal 14
+Loid meminta agar www.strix.operation.wise.yyy.com hanya bisa diakses dengan port 15000 dan port 15500
+
+### Jawab
+
+## Soal 15
+dengan autentikasi username Twilight dan password opStrix dan file di /var/www/strix.operation.wise.yyy
+
+### Jawab
+
+## Soal 16
+dan setiap kali mengakses IP Eden akan dialihkan secara otomatis ke www.wise.yyy.com 
+
+### Jawab
+
+## Soal 17
+Karena website www.eden.wise.yyy.com semakin banyak pengunjung dan banyak modifikasi sehingga banyak gambar-gambar yang random, maka Loid ingin mengubah request gambar yang memiliki substring “eden” akan diarahkan menuju eden.png. Bantulah Agent Twilight dan Organisasi WISE menjaga perdamaian! 
+
+### Jawab
 
