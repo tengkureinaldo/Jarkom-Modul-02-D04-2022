@@ -589,5 +589,5 @@ Karena website www.eden.wise.yyy.com semakin banyak pengunjung dan banyak modifi
 ### Jawab
 
 ## Kendala Yang Dialami
-Salah satu kendala yang sering dialami adalah beberapa node yang terkadang *error* dan tidak dapat terhubung dengan jaringan, sehingga tidak bisa menjalankan file .sh sebagaimana mestinya
+Salah satu kendala yang sering dialami adalah beberapa node yang terkadang *error* dan tidak dapat terhubung dengan jaringan, sehingga tidak dapat menjalankan file .sh sebagaimana mestinya
 
