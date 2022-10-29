@@ -14,8 +14,10 @@ dengan nama samaran Loid Forger (ロイド・フォージャー, Roido Fōjā) d
 WISE menjalankan operasinya di negara Ostania dengan cara melakukan spionase,
 sabotase, penyadapan dan kemungkinan pembunuhan. Berikut adalah peta dari negara
 Ostania:
-
-![topologi_modul2](https://user-images.githubusercontent.com/56400536/198799381-5474e30d-500c-435d-87e8-c3e712452bcd.jpg)
+	
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/56400536/198799381-5474e30d-500c-435d-87e8-c3e712452bcd.jpg"> 
+</p>
 
 WISE akan dijadikan sebagai DNS Master, Berlint akan dijadikan DNS Slave, dan Eden
 akan digunakan sebagai Web Server. Terdapat 2 Client yaitu SSS, dan Garden. 
@@ -139,8 +141,7 @@ Loid membuat website utama dengan akses wise.yyy.com dengan alias
 www.wise.yyy.com pada folder wise
 ### Jawab
 Pertama, dalam node WISE, kita harus mengonfigurasikan ```/etc/bind/named.conf.local``` dengan domain wise.D04.com. Kemudian buatlah direktori *wise* dengan command
-```mkdir /etc/bind/wise```. Setelah itu, salinlah ```/etc/bind/db.local``` ke dalam ```/etc/bind/wise/wise.D04.com```. Kemudian Isilah ```/etc/bind/wise/wise.D04.com```
-sesuai dengan *script* yang ada di bawah ini
+```mkdir /etc/bind/wise```. Setelah itu, salinlah ```/etc/bind/db.local``` ke dalam ```/etc/bind/wise/wise.D04.com```. Kemudian Isilah ```/etc/bind/wise/wise.D04.com``` sesuai dengan *script* yang ada di bawah ini. Lalu, restart bind9 dengan ```service bind9 restart```
 
 > kita dapat langsung menjalankannya dengan melakukan command ```bash soal2.sh```
 
@@ -178,7 +179,9 @@ www     IN      CNAME   wise.D04.com.
 
 service bind9 restart
 ```
-Kemudian kita dapat mengetes konfigurasi di atas dengan menjalankan ```bash soal2.sh``` di node SSS dan Garden (Client)
+Kita dapat mengetes konfigurasi di atas dengan menjalankan ```bash soal2.sh``` di node SSS dan Garden (Client)
+	
+* SSS dan Garden
 
 ```
 echo -e '
@@ -200,7 +203,19 @@ Setelah itu ia juga ingin membuat subdomain
 eden.wise.yyy.com dengan alias www.eden.wise.yyy.com yang diatur DNS-nya di WISE
 dan mengarah ke Eden
 ### Jawab
+Pertama, kita tambahkan ```eden IN A 10.17.3.3 ; IP Eden``` dan ```www.eden IN CNAME eden.wise.D04.com.``` ke 
+dalam ```/etc/bind/wise/wise.D04.com```. Kemudian restart bind9 dengan ```service bind9 restart```
 
+> kita dapat langsung menjalankannya dengan melakukan command ```bash soal3.sh```
+	
+* WISE
+	
+Kita dapat mengetes konfigurasi di atas dengan menjalankan ```bash soal3.sh``` di node SSS dan Garden (Client)
+	
+* SSS dan Garden
 
+## Soal 4
+Buat juga reverse domain untuk domain utama
+### Jawab
   
 
